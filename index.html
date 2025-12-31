@@ -2,89 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SRINIVASA – Sarees</title>
+  <title>SRINIVASA - Sarees</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <h1>SRINIVASA</h1>
-    <p class="tagline">Sarees • Hyderabad</p>
-  </header>
+<!-- HEADER -->
+<header class="header">
+  <h1>SRINIVASA</h1>
+  <p class="tagline">Sarees · Hyderabad</p>
+</header>
 
-  <!-- MAIN TITLE -->
-  <h2 class="page-title">SAREES</h2>
+<h2 class="page-title">SAREES</h2>
 
-  <!-- CATEGORIES -->
-  <section class="categories">
+<!-- CATEGORIES -->
+<section class="categories">
 
-    <!-- SILK -->
-    <div class="category">
-      <strong>SILK</strong>
-      <div class="subcats">
-        Kanchipuram<br>
-        Dharmavaram<br>
-        Banarasi<br>
-        Uppada<br>
-        Gadwal<br>
-        Pochampally Ikat<br>
-        Narayanpet<br>
-        Mangalagiri<br>
-        Kuppadam<br>
-        Fancy Silk
-      </div>
+  <!-- SILK -->
+  <div class="category">
+    <strong onclick="toggleSub(this)">SILK</strong>
+    <div class="subcats">
+      Kanchipuram<br>
+      Dharmavaram<br>
+      Banarasi<br>
+      Uppada<br>
+      Gadwal<br>
+      Pochampally Ikat<br>
+      Narayanpet<br>
+      Mangalagiri<br>
+      Kuppadam<br>
+      Fancy Silk
     </div>
+  </div>
 
-    <!-- COTTON -->
-    <div class="category">
-      <strong>COTTON</strong>
-      <div class="subcats">
-        Mangalagiri<br>
-        Narayanpet<br>
-        Gadwal Cotton<br>
-        Printed Cotton<br>
-        Fancy Cotton
-      </div>
+  <!-- COTTON -->
+  <div class="category">
+    <strong onclick="toggleSub(this)">COTTON</strong>
+    <div class="subcats">
+      Mangalagiri<br>
+      Narayanpet<br>
+      Gadwal Cotton<br>
+      Printed Cotton<br>
+      Fancy Cotton
     </div>
+  </div>
 
-    <!-- SINGLE TYPES -->
-    <div class="category">
-      <strong>CHIFFON</strong>
-    </div>
+  <!-- SINGLE TYPES -->
+  <div class="category"><strong>CHIFFON</strong></div>
+  <div class="category"><strong>GEORGETTE</strong></div>
+  <div class="category"><strong>SATIN</strong></div>
 
-    <div class="category">
-      <strong>GEORGETTE</strong>
-    </div>
+</section>
 
-    <div class="category">
-      <strong>SATIN</strong>
-    </div>
+<!-- WHATSAPP -->
+<section class="whatsapp-section">
+  <p>
+    WhatsApp us only for serious purchase enquiries<br>
+    or store visit confirmation
+  </p>
 
-  </section>
+  <a class="whatsapp-btn"
+     href="https://wa.me/918179456654"
+     target="_blank">
+     WhatsApp Us
+  </a>
+</section>
 
-  <!-- WHATSAPP -->
-  <section class="whatsapp-section">
-    <p>
-      WhatsApp us only for serious purchase enquiries<br>
-      or store visit confirmation
-    </p>
+<!-- FOOTER -->
+<footer>
+  © SRINIVASA · Hyderabad
+</footer>
 
-    <a class="whatsapp-btn"
-       href="https://wa.me/918179456654"
-       target="_blank">
-      WhatsApp Us
-    </a>
-  </section>
+<!-- JAVASCRIPT -->
+<script>
+function toggleSub(el) {
+  const sub = el.nextElementSibling;
 
-  <!-- FOOTER -->
-  <footer>
-    © SRINIVASA · Hyderabad
-  </footer>
+  document.querySelectorAll('.subcats').forEach(s => {
+    if (s !== sub) s.style.display = "none";
+  });
+
+  if (sub.style.display === "block") {
+    sub.style.display = "none";
+  } else {
+    sub.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
