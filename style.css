@@ -16,12 +16,15 @@ body {
   font-size: 32px;
 }
 /* TRADEMARK SYMBOL */
+
 .tm {
-  font-size: 12px;
+  font-size: 11px;
   vertical-align: super;
-  margin-left: 2px;
-  font-weight: 600;
+  margin-left: 1px;
+  font-weight: 500;
+  color: #444;
 }
+
 
 .tagline {
   margin-top: 6px;
