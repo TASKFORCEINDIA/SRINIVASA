@@ -85,9 +85,14 @@ body {
 }
 
 /* MENSWEAR */
+.menswear {
+  margin-top: 36px; /* equals ~3 subcategory lines */
+}
+
 .menswear strong {
   text-decoration: underline;
 }
+
 /* SAREES UNDERLINE */
 .sarees-title {
   text-decoration: underline;
