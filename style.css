@@ -88,6 +88,10 @@ body {
 .menswear strong {
   text-decoration: underline;
 }
+/* SAREES UNDERLINE */
+.sarees-title {
+  text-decoration: underline;
+}
 
 /* WHATSAPP */
 .whatsapp-section {
