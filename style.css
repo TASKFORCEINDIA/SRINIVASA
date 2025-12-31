@@ -37,10 +37,11 @@ body {
   font-size: 18px;
 }
 
-/* CATEGORIES */
 .categories {
   padding: 0 16px;
+  margin-bottom: 80px; /* pushes WhatsApp down */
 }
+
 
 /* EACH CATEGORY ROW */
 .category {
