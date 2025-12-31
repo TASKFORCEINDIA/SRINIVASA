@@ -2,98 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SRINIVASA - Sarees</title>
+  <title>SRINIVASA Shopping Mall – Ramnagar Hyderabad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <h1 class="brand-main">
-  SRINIVASA<span class="tm">™</span>
-</h1>
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="brand-main">
+      SRINIVASA<span class="tm">™</span>
+    </h1>
+    <div class="brand-sub">SHOPPING MALL</div>
+    <p class="tagline">Ramnagar · Hyderabad</p>
+  </header>
 
-<div class="brand-sub">SHOPPING MALL</div>
-<p class="tagline">Ramnagar · Hyderabad</p>
+  <!-- PAGE TITLE -->
+  <h2 class="page-title">SAREES</h2>
 
-</header>
+  <!-- CATEGORIES -->
+  <section class="categories">
 
-<h2 class="page-title">SAREES</h2>
-
-<!-- CATEGORIES -->
-<section class="categories">
-
-  <!-- SILK -->
-  <div class="category">
-    <strong onclick="toggleSub(this)">SILK</strong>
-    <div class="subcats">
-      Kanchipuram<br>
-      Dharmavaram<br>
-      Banarasi<br>
-      Uppada<br>
-      Gadwal<br>
-      Pochampally Ikat<br>
-      Narayanpet<br>
-      Mangalagiri<br>
-      Kuppadam<br>
-      Fancy Silk
+    <!-- SILK -->
+    <div class="category">
+      <strong onclick="toggleSub(this)">SILK</strong>
+      <div class="subcats">
+        Kanchipuram<br>
+        Dharmavaram<br>
+        Banarasi<br>
+        Uppada<br>
+        Gadwal<br>
+        Pochampally Ikat<br>
+        Narayanpet<br>
+        Mangalagiri<br>
+        Kuppadam<br>
+        Fancy Silk
+      </div>
     </div>
-  </div>
 
-  <!-- COTTON -->
-  <div class="category">
-    <strong onclick="toggleSub(this)">COTTON</strong>
-    <div class="subcats">
-      Mangalagiri<br>
-      Narayanpet<br>
-      Gadwal Cotton<br>
-      Printed Cotton<br>
-      Fancy Cotton
+    <!-- COTTON -->
+    <div class="category">
+      <strong onclick="toggleSub(this)">COTTON</strong>
+      <div class="subcats">
+        Mangalagiri<br>
+        Narayanpet<br>
+        Gadwal Cotton<br>
+        Printed Cotton<br>
+        Fancy Cotton
+      </div>
     </div>
-  </div>
 
-  <!-- SINGLE TYPES -->
-  <div class="category"><strong>CHIFFON</strong></div>
-  <div class="category"><strong>GEORGETTE</strong></div>
-  <div class="category"><strong>SATIN</strong></div>
+    <!-- SINGLE TYPES -->
+    <div class="category"><strong>CHIFFON</strong></div>
+    <div class="category"><strong>GEORGETTE</strong></div>
+    <div class="category"><strong>SATIN</strong></div>
 
-</section>
+  </section>
 
-<!-- WHATSAPP -->
-<section class="whatsapp-section">
-  
+  <!-- WHATSAPP -->
+  <section class="whatsapp-section">
+    <a class="whatsapp-btn"
+       href="https://wa.me/918179456654?text=*PRICES%20ARE%20FIXED*%0A*NO%20REFUNDS%20%7C%20ONLY%20EXCHANGE%20IN%20STORE%20WITHIN%201%20DAY*%0A%0AHello%20Srinivasa%20Shopping%20Mall%20-%20Ramnagar.%0A%0AOrdering%20through%20our%20APP%20(Sales%20Code:%20APP99).%0A%0A%E2%80%A2%20Selected%20item%20reference%20from%20the%20app%20(price%20noted)%0A%E2%80%A2%20Please%20confirm%20availability%0A%E2%80%A2%20Delivery%20option:%0A-%20Store%20pickup%0A-%20Hyderabad%20same-day%20delivery%20(delivery%20charges%20apply)%0A-%20Outstation%20parcel%0A%0AAfter%20confirmation,%20I%20will%20make%20UPI%20payment%20and%20share%20the%20receipt."
+       target="_blank">
+      WhatsApp Us
+    </a>
+  </section>
 
-  <a class="whatsapp-btn"
-     href="https://wa.me/918179456654?text=*PRICES%20ARE%20FIXED*%0A*NO%20REFUNDS%20%7C%20ONLY%20EXCHANGE%20IN%20STORE%20WITHIN%201%20DAY*%0A%0AHello%20Srinivasa%20Shopping%20Mall%20-%20Ramnagar.%0A%0AOrdering%20through%20APP%20(Sales%20Code:%20APP99).%0A%0A1.%20Selected%20item%20reference%20from%20the%20app%20(price%20noted).%0A2.%20Please%20confirm%20availability.%0A3.%20Delivery%20option:%0A-%20Store%20pickup%20/%20Hyderabad%20same-day%20delivery%20/%20Outstation%20parcel%0A4.%20After%20confirmation,%20I%20will%20make%20UPI%20payment%20and%20share%20receipt."
+  <!-- FOOTER -->
+  <footer>
+    © SRINIVASA · Hyderabad
+  </footer>
 
-     target="_blank">
-     WhatsApp Us
-  </a>
-</section>
+  <!-- SCRIPT -->
+  <script>
+    function toggleSub(el) {
+      const sub = el.nextElementSibling;
 
-<!-- FOOTER -->
-<footer>
-  © SRINIVASA · Hyderabad
-</footer>
+      document.querySelectorAll('.subcats').forEach(s => {
+        if (s !== sub) s.style.display = "none";
+      });
 
-<!-- JAVASCRIPT -->
-<script>
-function toggleSub(el) {
-  const sub = el.nextElementSibling;
-
-  document.querySelectorAll('.subcats').forEach(s => {
-    if (s !== sub) s.style.display = "none";
-  });
-
-  if (sub.style.display === "block") {
-    sub.style.display = "none";
-  } else {
-    sub.style.display = "block";
-  }
-}
-</script>
+      if (sub.style.display === "block") {
+        sub.style.display = "none";
+        el.classList.remove("active");
+      } else {
+        sub.style.display = "block";
+        el.classList.add("active");
+      }
+    }
+  </script>
 
 </body>
 </html>
