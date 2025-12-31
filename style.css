@@ -113,3 +113,10 @@ footer {
 .menswear strong {
   text-decoration: underline;
 }
+/* LEGACY BLOCK */
+.legacy {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
