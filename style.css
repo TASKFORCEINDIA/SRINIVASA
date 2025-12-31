@@ -109,3 +109,7 @@ footer {
   color: #666;
   font-size: 14px;
 }
+/* MENSWEAR VISUAL SEPARATION */
+.menswear strong {
+  text-decoration: underline;
+}
