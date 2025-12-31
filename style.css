@@ -92,8 +92,9 @@ body {
 /* WHATSAPP */
 .whatsapp-section {
   text-align: center;
-  margin: 30px 16px 10px;
+  margin: 60px 16px 20px; /* 👈 pushes WhatsApp DOWN */
 }
+
 
 .whatsapp-btn {
   display: inline-block;
