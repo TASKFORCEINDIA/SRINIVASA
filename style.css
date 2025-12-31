@@ -37,23 +37,42 @@ body {
   margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 20px;
 }
 
-/* CATEGORY NAME */
+/* CATEGORY NAME + ARROW */
 .category strong {
   font-size: 16px;
   cursor: pointer;
   min-width: 90px;
+  position: relative;
+  padding-right: 14px;
 }
 
-/* SUBCATEGORIES (RIGHT SIDE) */
+/* BABY ARROW (closed) */
+.category strong::after {
+  content: "▸";
+  position: absolute;
+  right: 0;
+  top: 1px;
+  font-size: 14px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+
+/* ARROW OPEN STATE */
+.category strong.active::after {
+  transform: rotate(90deg);
+}
+
+/* SUBCATEGORIES (RIGHT SIDE, MOVED UP) */
 .subcats {
   display: none;
   line-height: 1.6;
   color: #333;
   font-size: 14px;
   flex: 1;
+  margin-top: -2px; /* subtle upward alignment */
 }
 
 /* WHATSAPP */
