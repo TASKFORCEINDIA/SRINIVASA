@@ -24,7 +24,7 @@ body {
 /* PAGE TITLE */
 .page-title {
   margin: 20px 16px 10px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 /* CATEGORIES */
@@ -34,10 +34,14 @@ body {
 
 .category {
   margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
+
 .category strong {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
 }
 
