@@ -32,26 +32,28 @@ body {
   padding: 0 16px;
 }
 
+/* EACH CATEGORY ROW */
 .category {
   margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 24px;
 }
 
-
+/* CATEGORY NAME */
 .category strong {
   font-size: 16px;
   cursor: pointer;
+  min-width: 90px;
 }
 
-/* SUBCATEGORIES */
+/* SUBCATEGORIES (RIGHT SIDE) */
 .subcats {
   display: none;
-  margin-top: 8px;
-  margin-left: 12px;
   line-height: 1.6;
   color: #333;
+  font-size: 14px;
+  flex: 1;
 }
 
 /* WHATSAPP */
