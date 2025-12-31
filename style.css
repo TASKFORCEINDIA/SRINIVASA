@@ -1,1 +1,106 @@
 
+/* ===== BASIC RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* ===== HEADER ===== */
+.header {
+  text-align: center;
+  padding: 16px 12px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 24px 12px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* ===== CATEGORIES ===== */
+.categories {
+  padding: 16px;
+}
+
+.categories a {
+  display: block;
+  padding: 14px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* ===== CONTACT / WHATSAPP ===== */
+.contact {
+  padding: 20px 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 20px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* ===== MOBILE GALLERY ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
