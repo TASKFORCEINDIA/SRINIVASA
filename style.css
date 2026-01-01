@@ -24,10 +24,15 @@ body {
   padding: 20px;
 }
 
-.category {
-  margin-top: 12px;
-  font-size: 16px;
+.subcats {
+  display: none;
+  position: absolute;
+  left: 180px;        /* controls right-side distance */
+  top: 0;
+  font-size: 14px;
+  color: #444;
 }
+
 
 .category.main {
   font-weight: bold;
@@ -41,11 +46,13 @@ body {
 
 .subcats {
   display: none;
-  margin-left: 24px;
-  margin-top: 6px;
+  position: absolute;
+  left: 180px;        /* controls right-side distance */
+  top: 0;
   font-size: 14px;
   color: #444;
 }
+
 
 .whatsapp-section {
   text-align: center;
