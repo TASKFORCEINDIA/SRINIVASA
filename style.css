@@ -33,7 +33,9 @@ body {
 
 .category {
   position: relative;
+  margin-bottom: 6px;   /* controls vertical spacing */
 }
+
 
 .menswear {
   margin-top: 30px;
@@ -43,8 +45,8 @@ body {
 .subcats {
   display: none;
   position: absolute;
-  left: 160px;
-  top: 2px;
+  left: 120px;          /* closer to arrow */
+  top: 0;
   font-size: 14px;
   color: #444;
 }
@@ -56,11 +58,12 @@ body {
 
 .category.main {
   font-weight: 700;
-  text-decoration: none;
-  margin-top: 12px;
-  margin-bottom: 10px;   /* ← ADD THIS LINE */
+  margin-top: 28px;     /* THIS pushes Menswear down */
+  margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
+
 
 
 
@@ -73,7 +76,7 @@ body {
 
 .whatsapp-section {
   text-align: center;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 .whatsapp-btn {
@@ -88,7 +91,7 @@ body {
 
 .legacy {
   text-align: center;
-  padding: 20px;
+  padding: 14px;
   color: #666;
 }
 
