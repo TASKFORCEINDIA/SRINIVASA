@@ -45,8 +45,10 @@ body {
   font-weight: 700;
   text-decoration: none;
   margin-top: 28px;
+  margin-bottom: 14px;   /* ← ADD THIS LINE */
   letter-spacing: 1px;
 }
+
 
 
 .toggle {
