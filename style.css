@@ -31,12 +31,12 @@ body {
 
 .subcats {
   display: none;
-  position: absolute;
-  left: 160px;     /* distance to the right */
-  top: 0;
+  margin-left: 160px;   /* moves it to the right */
+  margin-top: 4px;
   font-size: 14px;
   color: #444;
 }
+
 
 
 
