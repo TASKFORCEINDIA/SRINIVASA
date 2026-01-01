@@ -24,14 +24,19 @@ body {
   padding: 20px;
 }
 
+.category {
+  position: relative;
+}
+
 .subcats {
   display: none;
   position: absolute;
-  left: 180px;
-  margin-top: -18px;   /* aligns with arrow */
+  left: 200px;     /* distance to the right */
+  top: 0;
   font-size: 14px;
   color: #444;
 }
+
 
 
 
@@ -45,14 +50,7 @@ body {
   cursor: pointer;
 }
 
-.subcats {
-  display: none;
-  position: absolute;
-  left: 180px;        /* controls right-side distance */
-  top: 0;
-  font-size: 14px;
-  color: #444;
-}
+
 
 
 .whatsapp-section {
