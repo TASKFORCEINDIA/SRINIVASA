@@ -1,149 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>SRINIVASA Shopping Mall</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SRINIVASA Shopping Mall</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <h1 class="brand-main">
-      SRINIVASA<span class="tm">™</span>
-    </h1>
-    <div class="brand-sub">SHOPPING MALL</div>
-    <p class="tagline">Ramnagar · Hyderabad</p>
-  </header>
+<header>
+  <h1>SRINIVASA™</h1>
+  <p class="subtitle">SHOPPING MALL</p>
+  <p class="location">Ramnagar · Hyderabad</p>
+</header>
 
-  <!-- PAGE TITLE -->
-  <h2 class="page-title sarees-title">SAREES</h2>
+<section class="catalogue">
 
-
-  <!-- CATEGORIES -->
-  <section class="categories">
-
-    <!-- SILK -->
-    <div class="category">
-      <strong onclick="toggleSub(this)">SILK</strong>
-      <div class="subcats">
-        Kanchipuram<br>
-        Dharmavaram<br>
-        Banarasi<br>
-        Uppada<br>
-        Gadwal<br>
-        Pochampally Ikat<br>
-        Narayanpet<br>
-        Mangalgiri<br>
-        Kuppadam<br>
-        Fancy Silk
-      </div>
-    </div>
-
-    <!-- COTTON -->
-    <div class="category">
-      <strong onclick="toggleSub(this)">COTTON</strong>
-      <div class="subcats">
-        Mangalgiri<br>
-        Narayanpet<br>
-        Gadwal Cotton<br>
-        Printed Cotton<br>
-        Fancy Cotton
-      </div>
-    </div>
-
-    <!-- SINGLE TYPES -->
-    <div class="category"><strong>CHIFFON</strong></div>
-    <div class="category"><strong>GEORGETTE</strong></div>
-    <div class="category"><strong>SATIN</strong></div>
-
-    <!-- MENSWEAR -->
-    
-<!-- MENSWEAR -->
-<div class="category menswear">
-  <strong>MENSWEAR</strong>
-
-  <div class="subcats always-show">
-
-    <div class="subgroup">
-      <strong class="subhead">Ethnic Wear</strong>
-      <div class="subitems">
-        Dhoti & Lungi
-      </div>
-    </div>
-
-    <div class="subgroup">
-      <strong class="subhead">Shirts</strong>
-      <div class="subitems">
-        Formal Shirts<br>
-        Casual Shirts
-      </div>
-    </div>
-
-    <div class="subgroup">
-      <strong class="subhead">Jeans</strong>
-    </div>
-
-    <div class="subgroup">
-      <strong class="subhead">Fabric (Cloth)</strong>
-    </div>
-
+  <!-- SAREES -->
+  <div class="category boss">
+    <strong>SAREES</strong>
   </div>
-</div>
 
-  </section>
+  <div class="category">
+    <strong>SILK ▶</strong>
+  </div>
 
-  <!-- WHATSAPP -->
-  <section class="whatsapp-section">
-    <a class="whatsapp-btn"
-       href="https://wa.me/918179456654?text=PRICES%20ARE%20FIXED.%20NO%20REFUNDS.%20ONLY%20EXCHANGE%20IN%20STORE%20WITHIN%201%20DAY.%0A%0A1.%20Selected%20item%20(photo%20%26%20price)%0A2.%20Confirm%20availability%0A3.%20Delivery%20or%20Pickup%0A4.%20Delivery%20charges%20apply%0A5.%20UPI%20payment%20only"
-       target="_blank">
-      WhatsApp Us
-    </a>
+  <div class="category">
+    <strong>COTTON ▶</strong>
+  </div>
 
-    <!-- LEGACY -->
-    <div class="legacy">
+  <div class="category">
+    <strong>CHIFFON ▶</strong>
+  </div>
+
+  <div class="category">
+    <strong>GEORGETTE ▶</strong>
+  </div>
+
+  <div class="category">
+    <strong>SATIN ▶</strong>
+  </div>
+
+  <!-- MENSWEAR -->
+  <div class="category menswear boss">
+    <strong>MENSWEAR</strong>
+
+    <div class="subcats always-show">
+
+      <div class="subgroup">
+        <strong class="subhead">Ethnic Wear ▶</strong>
+        <div class="subitems">
+          Dhoti<br>
+          Lungi<br>
+          (More coming)
+        </div>
+      </div>
+
+      <div class="subgroup">
+        <strong class="subhead">Shirts ▶</strong>
+        <div class="subitems">
+          Formal Shirts<br>
+          Casual Shirts
+        </div>
+      </div>
+
+      <div class="subgroup">
+        <strong class="subhead">Jeans</strong>
+      </div>
+
+      <div class="subgroup">
+        <strong class="subhead">Fabric (Cloth)</strong>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- WHATSAPP -->
+<section class="whatsapp-section">
+  <a class="whatsapp-btn"
+     href="https://wa.me/918179456654?text=PRICES%20ARE%20FIXED"
+     target="_blank">
+    WhatsApp Us
+  </a>
+</section>
+
+<!-- LEGACY -->
+<div class="legacy">
   <div class="legacy-title">LEGACY</div>
   <div class="legacy-text">
     Established in 1974 · One of Hyderabad’s first shopping malls<br>
-    Serving Andhra Pradesh & Telangana for 50+ years · Wholesale prices
-    365 days a year.
+    Serving Andhra Pradesh & Telangana for 50+ years · Wholesale prices 365 days a year.
   </div>
 </div>
 
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © SRINIVASA · Hyderabad
-  </footer>
-
-  <!-- SCRIPT -->
-  <script>
-    function toggleSub(el) {
-      const sub = el.nextElementSibling;
-
-      document.querySelectorAll('.subcats').forEach(s => {
-        if (s !== sub) {
-          s.style.display = 'none';
-          s.previousElementSibling?.classList.remove('active');
-        }
-      });
-
-      if (!sub) return;
-
-      if (sub.style.display === 'block') {
-        sub.style.display = 'none';
-        el.classList.remove('active');
-      } else {
-        sub.style.display = 'block';
-        el.classList.add('active');
-      }
-    }
-  </script>
+<footer>
+  © SRINIVASA · Hyderabad
+</footer>
 
 </body>
 </html>
