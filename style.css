@@ -176,3 +176,26 @@ footer {
   margin-top: 6px;
 }
 
+/* MENSWEAR STRUCTURE FIX */
+.menswear .subcats {
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.subgroup {
+  margin-top: 10px;
+}
+
+.subhead {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+
+.subitems {
+  margin-left: 14px;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #444;
+}
+
