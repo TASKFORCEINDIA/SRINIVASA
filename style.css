@@ -58,7 +58,7 @@ body {
 
 .category.main {
   font-weight: 700;
-  margin-top: 28px;     /* THIS pushes Menswear down */
+  margin-top: 40px;     /* THIS pushes Menswear down */
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
