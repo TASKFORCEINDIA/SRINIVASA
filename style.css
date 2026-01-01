@@ -1,218 +1,80 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
+  background: #fff;
   color: #000;
 }
 
-/* HEADER */
 .header {
   text-align: center;
-  padding: 28px 16px 18px;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 800;
-}
-
-.tm {
-  font-size: 12px;
-  vertical-align: super;
-  margin-left: 2px;
+  padding: 20px;
 }
 
 .subtitle {
-  font-size: 14px;
   letter-spacing: 2px;
-  font-weight: bold;
   margin-top: 4px;
 }
 
 .location {
-  font-size: 14px;
-  color: #666;
-  margin-top: 6px;
+  color: #777;
+  margin-top: 4px;
 }
 
-/* CATALOG */
 .catalog {
-  padding: 10px 22px;
+  padding: 20px;
 }
 
 .category {
-  margin: 10px 0;
-}
-
-.category strong {
-  font-size: 15px;
-  cursor: pointer;
-}
-
-/* MAIN CATEGORY ARROWS */
-.category > strong::after {
-  content: " ▶";
-  font-size: 12px;
-  opacity: 0.6;
-}
-
-/* SAREES = BOSS (NO ARROW) */
-.category.sarees > strong::after {
-  content: "";
-}
-
-.category.sarees strong {
-  text-decoration: underline;
-}
-
-/* MENSWEAR */
-.menswear strong {
-  text-decoration: underline;
-}
-
-/* SUBCATEGORIES */
-.subcats {
-  margin-left: 18px;
-  margin-top: 8px;
-}
-
-.subgroup {
   margin-top: 12px;
-}
-
-.subhead {
-  font-size: 14px;
-  text-decoration: underline;
-}
-
-/* SUBHEAD ARROW */
-.subhead::after {
-  content: " ▶";
-  font-size: 11px;
-  opacity: 0.5;
-}
-
-.subitems {
-  margin-left: 16px;
-  margin-top: 6px;
-  font-size: 14px;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* WHATSAPP */
-.whatsapp-section {
-  text-align: center;
-  margin: 34px 0 18px;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  padding: 14px 26px;
-  background: #25D366;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
   font-size: 16px;
 }
 
-/* LEGACY */
+.category.main {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 24px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.subcats {
+  display: none;
+  margin-left: 24px;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.whatsapp-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .legacy {
   text-align: center;
-  margin: 16px 24px;
+  padding: 20px;
+  color: #666;
 }
 
 .legacy-title {
-  font-size: 14px;
   letter-spacing: 2px;
-  color: #666;
   margin-bottom: 6px;
 }
 
-.legacy-text {
-  font-size: 13px;
-  color: #666;
-  line-height: 1.6;
-}
-
-/* FOOTER */
 footer {
   text-align: center;
-  margin: 26px 0;
-  font-size: 14px;
+  padding: 12px;
+  font-size: 13px;
   color: #666;
 }
-/* REMOVE arrows from single items */
-.subgroup:not(:has(.subitems)) .subhead::after {
-  content: "";
-}
-
-/* REMOVE arrow from MENSWEAR title */
-.menswear > strong::after {
-  content: "";
-}
-.subcats {
-  display: none;
-  margin-left: 16px;
-  margin-top: 6px;
-  line-height: 1.6;
-}
-
-.category strong {
-  cursor: pointer;
-}
-.category {
-  position: relative;
-  margin-bottom: 14px;
-}
-
-.category strong {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.subcats {
-  display: none;
-  margin-left: 28px;   /* pushes content to the right */
-  margin-top: 6px;
-  font-size: 14px;
-  color: #444;
-}
-
-.subcats.show {
-  display: block;
-}
-/* --- Subcategory alignment fix --- */
-
-.subcats {
-  margin-left: 28px;     /* moves items to right of arrow */
-  margin-top: 6px;
-  font-size: 14px;
-  color: #444;
-}
-
-.subgroup {
-  margin-left: 14px;
-  margin-top: 6px;
-}
-
-.subhead {
-  display: inline-block;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.subitems {
-  margin-left: 18px;
-  margin-top: 4px;
-  font-size: 13px;
-  color: #555;
-}
-
-
-
-
