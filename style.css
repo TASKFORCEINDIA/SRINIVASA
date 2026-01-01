@@ -79,6 +79,7 @@ body {
   font-weight: bold;
 }
 
+
 .legacy {
   text-align: center;
   padding: 20px;
@@ -109,4 +110,7 @@ footer {
   margin-top: 28px;
 }
 
+.menswear {
+  padding-top: 24px;
+}
 
