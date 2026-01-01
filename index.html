@@ -120,6 +120,13 @@
 <footer>
   © SRINIVASA · Hyderabad
 </footer>
+<script>
+  function toggleSub(el) {
+    const sub = el.nextElementSibling;
+    if (!sub) return;
+    sub.style.display = sub.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 </body>
 </html>
