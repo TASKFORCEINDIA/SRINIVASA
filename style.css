@@ -41,10 +41,12 @@ body {
 
 
 .category.main {
-  font-weight: bold;
-  text-decoration: underline;
-  margin-top: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 28px;
+  letter-spacing: 1px;
 }
+
 
 .toggle {
   cursor: pointer;
