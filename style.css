@@ -185,6 +185,34 @@ footer {
 .subcats.show {
   display: block;
 }
+/* --- Subcategory alignment fix --- */
+
+.subcats {
+  margin-left: 28px;     /* moves items to right of arrow */
+  margin-top: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.subgroup {
+  margin-left: 14px;
+  margin-top: 6px;
+}
+
+.subhead {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.subitems {
+  margin-left: 18px;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #555;
+}
+
 
 
 
