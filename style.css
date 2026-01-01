@@ -169,4 +169,10 @@ footer {
 .menswear strong::after {
   content: "";
 }
+/* Always show fixed subcategories like Menswear */
+.subcats.always-show {
+  display: block !important;
+  margin-left: 14px;
+  margin-top: 6px;
+}
 
