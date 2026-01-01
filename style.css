@@ -84,3 +84,10 @@ footer {
   font-size: 13px;
   color: #666;
 }
+.tm {
+  font-size: 12px;
+  vertical-align: super;
+  margin-left: 2px;
+  font-weight: 400;
+}
+
