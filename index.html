@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SRINIVASA Shopping Mall</title>
+<title>SRINIVASA</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,118 +17,86 @@
 
 <section class="catalog">
 
-  <!-- SAREES -->
-  <div class="category sarees">
-    <strong>SAREES</strong>
-  </div>
+<!-- SAREES -->
+<div class="category main">SAREES</div>
 
-  <div class="category">
-  <strong onclick="toggleSub(this)">SILK</strong>
-
+<div class="category">
+  <div class="toggle" onclick="toggle(this)">SILK ▶</div>
   <div class="subcats">
     Kanchipuram<br>
     Dharmavaram<br>
     Banaras<br>
     Uppada<br>
     Gadwal<br>
-    Pochampally Ikat<br>
-    Narayanpet<br>
-    Mangalgiri<br>
-    Kuppadam<br>
     Fancy Silk
   </div>
 </div>
 
-
-  <div class="category">
-  <strong onclick="toggleSub(this)">COTTON</strong>
-
-  <div class="subcats always-show">
+<div class="category">
+  <div class="toggle" onclick="toggle(this)">COTTON ▶</div>
+  <div class="subcats">
     Mangalagiri<br>
     Narayanpet<br>
-    Gadwal Cotton<br>
     Printed Cotton<br>
     Fancy Cotton
   </div>
 </div>
 
+<div class="category">CHIFFON ▶</div>
+<div class="category">GEORGETTE ▶</div>
+<div class="category">SATIN ▶</div>
 
-  <div class="category">
-    <strong>CHIFFON</strong>
-  </div>
+<!-- MENSWEAR -->
+<div class="category main">MENSWEAR</div>
 
-  <div class="category">
-    <strong>GEORGETTE</strong>
-  </div>
-
-  <div class="category">
-    <strong>SATIN</strong>
-  </div>
-
-  <!-- MENSWEAR -->
-  <div class="category menswear">
-    <strong>MENSWEAR</strong>
-
-    <div class="subcats always-show">
-
-      <div class="subgroup">
-        <strong class="subhead">Ethnic Wear</strong>
-        <div class="subitems">
-          Dhoti<br>
-          Lungi<br>
-          (More coming)
-        </div>
-      </div>
-
-      <div class="subgroup">
-        <strong class="subhead">Shirts</strong>
-        <div class="subitems">
-          Formal Shirts<br>
-          Casual Shirts
-        </div>
-      </div>
-
-      <div class="subgroup">
-        <strong class="subhead">Jeans</strong>
-      </div>
-
-      <div class="subgroup">
-        <strong class="subhead">Fabric (Cloth)</strong>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- WHATSAPP -->
-<section class="whatsapp-section">
-  <a class="whatsapp-btn"
-     href="https://wa.me/918179456654?text=PRICES%20ARE%20FIXED.%20NO%20REFUNDS.%20ONLY%20EXCHANGE%20IN%20STORE.%0A%0ASelected%20Item:%0APrice:%0AAvailability:%0ADelivery/Pickup:%0APayment:%20UPI"
-     target="_blank">
-    WhatsApp Us
-  </a>
-</section>
-
-<!-- LEGACY -->
-<div class="legacy">
-  <div class="legacy-title">LEGACY</div>
-  <div class="legacy-text">
-    Established in 1974 · One of Hyderabad’s first shopping malls<br>
-    Serving Andhra Pradesh & Telangana for 50+ years · Wholesale prices 365 days a year.
+<div class="category">
+  <div class="toggle" onclick="toggle(this)">Ethnic Wear ▶</div>
+  <div class="subcats">
+    Dhoti<br>
+    Lungi<br>
+    (More coming)
   </div>
 </div>
 
-<footer>
-  © SRINIVASA · Hyderabad
-</footer>
+<div class="category">
+  <div class="toggle" onclick="toggle(this)">Shirts ▶</div>
+  <div class="subcats">
+    Formal Shirts<br>
+    Casual Shirts
+  </div>
+</div>
+
+<div class="category">Jeans</div>
+<div class="category">Fabric (Cloth)</div>
+
+</section>
+
+<section class="whatsapp-section">
+  <a class="whatsapp-btn"
+     href="https://wa.me/918179456654?text=PRICES%20ARE%20FIXED"
+     target="_blank">
+     WhatsApp Us
+  </a>
+</section>
+
+<div class="legacy">
+  <div class="legacy-title">LEGACY</div>
+  <div class="legacy-text">
+    Established in 1974 · Serving Andhra Pradesh & Telangana for 50+ years ·
+    Wholesale prices 365 days a year.
+  </div>
+</div>
+
+<footer>© SRINIVASA · Hyderabad</footer>
+
 <script>
-  function toggleSub(el) {
-    const sub = el.nextElementSibling;
-    if (!sub) return;
-    sub.style.display = sub.style.display === "block" ? "none" : "block";
-  }
+function toggle(el) {
+  const sub = el.nextElementSibling;
+  if (!sub) return;
+  sub.style.display = sub.style.display === "block" ? "none" : "block";
+}
 </script>
 
 </body>
 </html>
+
