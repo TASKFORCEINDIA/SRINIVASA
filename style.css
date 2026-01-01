@@ -102,4 +102,8 @@ footer {
   margin-left: 2px;
   font-weight: 400;
 }
+.header h1 {
+  margin: 0;
+}
+
 
