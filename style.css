@@ -29,11 +29,13 @@ body {
 
 .subcats {
   display: none;
-  margin-left: 160px;   /* moves it to the right */
-  margin-top: 4px;
+  position: absolute;
+  left: 160px;
+  top: 0;
   font-size: 14px;
   color: #444;
 }
+
 
 
 
