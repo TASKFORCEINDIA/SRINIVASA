@@ -25,6 +25,11 @@ body {
 .catalog {
   padding: 12px 20px;
 }
+.category {
+  position: relative;
+  margin-bottom: 4px;
+  min-height: 22px;
+}
 
 
 
@@ -33,7 +38,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 0;
+  top: 2px;
   font-size: 14px;
   color: #444;
 }
