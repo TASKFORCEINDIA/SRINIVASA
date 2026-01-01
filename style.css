@@ -163,5 +163,28 @@ footer {
 .category strong {
   cursor: pointer;
 }
+.category {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.category strong {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.subcats {
+  display: none;
+  margin-left: 28px;   /* pushes content to the right */
+  margin-top: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.subcats.show {
+  display: block;
+}
+
 
 
