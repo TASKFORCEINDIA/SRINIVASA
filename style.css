@@ -144,3 +144,13 @@ footer {
   font-size: 14px;
   color: #666;
 }
+/* REMOVE arrows from single items */
+.subgroup:not(:has(.subitems)) .subhead::after {
+  content: "";
+}
+
+/* REMOVE arrow from MENSWEAR title */
+.menswear > strong::after {
+  content: "";
+}
+
