@@ -153,4 +153,15 @@ footer {
 .menswear > strong::after {
   content: "";
 }
+.subcats {
+  display: none;
+  margin-left: 16px;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+.category strong {
+  cursor: pointer;
+}
+
 
