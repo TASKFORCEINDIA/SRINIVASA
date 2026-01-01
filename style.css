@@ -45,7 +45,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   margin-top: 12px;
-  margin-bottom: 14px;   /* ← ADD THIS LINE */
+  margin-bottom: 10px;   /* ← ADD THIS LINE */
   letter-spacing: 1px;
 }
 
