@@ -27,11 +27,12 @@ body {
 .subcats {
   display: none;
   position: absolute;
-  left: 180px;        /* controls right-side distance */
-  top: 0;
+  left: 180px;
+  margin-top: -18px;   /* aligns with arrow */
   font-size: 14px;
   color: #444;
 }
+
 
 
 .category.main {
