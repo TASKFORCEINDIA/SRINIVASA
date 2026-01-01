@@ -44,7 +44,7 @@ body {
 .category.main {
   font-weight: 700;
   text-decoration: none;
-  margin-top: 28px;
+  margin-top: 20px;
   margin-bottom: 14px;   /* ← ADD THIS LINE */
   letter-spacing: 1px;
 }
