@@ -31,7 +31,7 @@ body {
 .subcats {
   display: none;
   position: absolute;
-  left: 200px;     /* distance to the right */
+  left: 160px;     /* distance to the right */
   top: 0;
   font-size: 14px;
   color: #444;
