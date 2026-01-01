@@ -91,11 +91,20 @@
 
 <script>
 function toggle(el) {
+  // close all other subcats
+  document.querySelectorAll('.subcats').forEach(menu => {
+    if (menu !== el.nextElementSibling) {
+      menu.style.display = 'none';
+    }
+  });
+
+  // toggle current one
   const sub = el.nextElementSibling;
   if (!sub) return;
   sub.style.display = sub.style.display === "block" ? "none" : "block";
 }
 </script>
+
 
 </body>
 </html>
